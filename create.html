@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1 onclick="listBlogs(blogs)">Blogs</h1>
+                <a href="./create.html">Add blog</a>
+            </nav>
+        </div>
+    </header><br />
+    <main>
+        <div class="container">
+            <h2>Add a Blog</h2>
+            <div>
+                <form>
+                    <div class="form-element">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Title" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="message">Message</label>
+                        <textarea name="body" id="body" cols="30" rows="10" placeholder="Your blog..." required></textarea>
+                    </div>
+                    <div class="btn-group">
+                        <button>Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./js/create.js"></script>
+</body>
+</html>

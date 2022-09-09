@@ -4,49 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <!-- ======= Contact Modal ======= -->
-    <div class="modal" id="modal">
-        <div class="modal-body">
-            <div>
-                <span class="modalBtn" onclick="toggleModal()">X</span>
-            </div>
-            <div>
-                <form id="contactForm">
-                    <h2>Add a Blog</h2>
-                    <div class="form-element">
-                        <label for="title">Title</label>
-                        <input type="text" name="title" id="title" placeholder="Title" required>
-                    </div>
-                    <div class="form-element">
-                        <label for="message">Message</label>
-                        <textarea name="details" id="body" cols="30" rows="10" placeholder="Your blog..." required></textarea>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" onclick="addBlog()">Add</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- ======= /Contact Modal ======= -->
     <header>
         <div class="container">
             <nav>
-                <h1 onclick="listBlogs(blogs)">Blogs</h1>
-                <i onclick="toggleModal()">Add Blog</i>
+                <h1>Blogs</h1>
+                <a href="./create.html">Add blog</a>
             </nav>
         </div>
     </header><br />
     <main>
         <div class="container">
+            <form  id="hul">
+                <div>
+                    <input type="text" name="term" placeholder="search">
+                </div>
+            </form>
             <div class="blog-list" id="blogs"></div>
         </div>
     </main>
-    <script src="db.js"></script>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
